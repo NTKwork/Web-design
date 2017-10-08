@@ -1,2 +1,2 @@
 # Web-design
-Study progect
+Studing project
