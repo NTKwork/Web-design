@@ -1,0 +1,48 @@
+#mainmenu
+{
+    position: relative;
+    overflow: hidden;
+
+}
+
+#mainmenu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+    font-family: Arial;
+    letter-spacing: 2px;
+
+}
+
+
+#mainmenu ul li {
+    font-family: Arial;
+    display: inline-block;
+    left: -50%;
+    position: relative;
+    color: aliceblue;
+    margin: 0 10px;
+    height: 40px;
+    float: left;
+}
+
+#mainmenu ul li a
+{
+    display: block;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+li
+{
+    padding: 10px;
+}
+
+html
+{
+    background-color: dimgrey;
+}
