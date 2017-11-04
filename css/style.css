@@ -1,48 +1,60 @@
-#mainmenu
-{
-    position: relative;
-    overflow: hidden;
-
+body {
+    background-color: #34344c;
 }
 
-#mainmenu ul
-{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 50%;
-    float: left;
-    font-family: Arial;
-    letter-spacing: 2px;
-
+nav{
+    background-color: #34344c;
+    text-align: center;
 }
 
-
-#mainmenu ul li {
-    font-family: Arial;
+nav a {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     display: inline-block;
-    left: -50%;
-    position: relative;
-    color: aliceblue;
-    margin: 0 10px;
-    height: 40px;
-    float: left;
-}
-
-#mainmenu ul li a
-{
-    display: block;
+    color: white;
     text-decoration: none;
-    padding: 0 15px;
+    font-size: 1.2em;
+    font-family: Arial, Verdana, sans-serif;
 }
 
-li
-{
-    padding: 10px;
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: #5c5c8a;
+    color: white;
 }
 
-html
-{
-    background-color: dimgrey;
-}
+
+    .container {
+        width: 70rem;
+        margin: 0 auto;
+    }
+
+    .background {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .image {
+
+        background-image: url("http://www.zastavki.com/pictures/originals/2013/Nature__039469_.jpg");
+        height: 20%;
+        height: 400px;
+        box-sizing: border-box;
+    }
+    img {
+       width: 70rem;
+        height: 30rem;
+
+
+    }
+
+    .text {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
