@@ -1,4 +1,15 @@
-<?php
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Find us</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style_container.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+  </head>
+  <body>
+  <?php
   session_start();
   if(isset($_POST["send"])) {
     $from = htmlspecialchars($_POST["name"]);
@@ -16,16 +27,6 @@
   }
 ?>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Find us</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style_container.css" rel="stylesheet">
-    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
-  </head>
-  <body>
     <header>
       <nav >
         <ul>
