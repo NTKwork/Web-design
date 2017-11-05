@@ -2,42 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Olga Ustinova-about</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <title>About</title>
+    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+    <link href="css/styleabout.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <a href="index.html"><li>Main</li></a>
-                <a href="appointments.html"><li>Appointments</li></a>
-                <a href="contacts.html"><li>Contact</li></a>
-                <li>About us</li>
-                <a href="#"><li>Interesting</li></a>
-            </ul>
+        <nav class="container">
+
+                <a href="index.html">Main</a>
+                <a href="appointments.html">Appointments</a>
+                <a href="contacts.html">Contact</a>
+                <a href="#">About us</a>
+                <a href="#">Interesting</a>
+
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-               <img>
+        <section class="container">
+            <div class="portrait">
+               <img src="png/portrait.png">
             </div>
-            <div>
+            <div class="text">
                 <h1>About myself</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
             </div>
-            <div>
-                <img width="200px" src="png/cert1.jpg"> <img width="200px" src="png/cert2.jpg"> <img width="200px" src="png/cert3.jpg">
+            <div class="cert">
+                <img src="png/cert1.jpg"> <img src="png/cert2.jpg"> <img src="png/cert3.jpg">
             </div>
         </section>
     </main>
-    <footer class="clearfix">
-        <section class="social">
+    <footer>
+
             <a href="#" class="tw"></a>
             <a href="#" class="inst"></a>
             <a href="#" class="fb"></a>
-        </section>
+            <a href="#" class="vk"></a>
+
     </footer>
 </body>
 </html>

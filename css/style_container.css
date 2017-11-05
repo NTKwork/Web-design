@@ -1,0 +1,124 @@
+body {
+  background-color: #cadab5;
+  font-family: Arial;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #aabaa2;
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+li {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+nav a, li {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  background-color: #8ea671;
+  color: white;
+}
+
+.container {
+  /*background: rgb(200, 200,200);*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70rem;
+  margin: 0 auto;
+}
+
+iframe {
+  width: 48%;
+  height: 600px;
+}
+
+.address_and_feedback {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  width: 48%;
+  height: 600px;
+  padding: 20px;
+  background:#aabaa2;
+  box-sizing: border-box;
+}
+
+.contact_information p {
+  margin-top: 0;
+}
+
+.feedback {
+  margin-top: 110px;
+}
+
+form div {
+  padding: 0 10px 15px 0;
+}
+
+footer {
+  height: 36px;
+  background: #aabaa2;
+  margin-top: 30px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+
+}
+
+footer a {
+  display: inline-block;
+  width: 30px;
+  height:30px;
+  margin-left: 20px;
+  margin-top: 3px;
+  border-radius: 50%;
+  background-position: center center; /* Положение фона */
+  background-repeat: no-repeat;
+}
+
+.tw {
+  background-image: url(../img/tw.png);
+  /*background-position: center center; /* Положение фона */
+  background-repeat: no-repeat;*/
+  background-color:#6c7e7d;
+}
+
+.inst {
+  background-image: url(../img/inst.png);
+  /*background-position: center center; /* Положение фона */
+  background-repeat: no-repeat;*/
+  background-color:#6c7e7d;
+}
+
+.fb {
+  background-image: url(../img/fb.png);
+  /*background-position: center center; /* Положение фона */
+  background-repeat: no-repeat;*/
+  background-color:#6c7e7d;
+}

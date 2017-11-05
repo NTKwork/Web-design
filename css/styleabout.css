@@ -1,0 +1,127 @@
+body {
+    background-color: #04376C;
+}
+
+nav{
+    background-color: #04376C;
+    text-align: center;
+}
+
+nav a {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: #4188D2;
+    color: white;
+}
+
+
+.container {
+    width: 70rem;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 20px;
+    height: 550px;
+}
+.text{
+    width: 40rem;
+    padding: 2rem;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 1.1em;
+    color: rgba(00,00,00,0.6);
+}
+
+.text h1 {
+    color: rgba(00,00,00,0.8);
+}
+.portrait {
+    padding: 2rem;
+}
+
+.portrait img {
+    border: solid;
+    border-color: #4188D2;
+    -webkit-box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
+    box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
+    border-radius: 20px;
+    width: 315px;
+    height: 246px;
+}
+.cert {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 70rem;
+}
+.cert img {
+    width: 200px;
+    height: 150px;
+    border: solid;
+    border-color: #4188D2;
+    border-radius: 20px;
+    -webkit-box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
+    box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
+}
+
+footer {
+    background: #04376C;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+
+}
+
+
+footer a {
+    display: inline-block;
+    width: 30px;
+    height:30px;
+    margin: 1rem;
+    margin-top: 3px;
+    border-radius: 50%;
+    background-position: center center; /* Положение фона */
+    background-repeat: no-repeat;
+}
+
+.tw {
+    background-image: url(../img/tw.png);
+    /*background-position: center center; /* Положение фона */
+    background-repeat: no-repeat;
+background-color:#04376C;
+}
+
+.inst {
+    background-image: url(../img/inst.png);
+    /*background-position: center center; /* Положение фона */
+    background-repeat: no-repeat;
+background-color:#04376C;
+}
+
+.fb {
+    background-image: url(../img/fb.png);
+    /*background-position: center center; /* Положение фона */
+    background-repeat: no-repeat;
+background-color:#04376C;
+}
+.vk {
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    background-color:#04376C;
+}
+
+

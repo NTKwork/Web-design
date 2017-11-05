@@ -1,3 +1,21 @@
+<?php
+  session_start();
+  if(isset($_POST["send"])) {
+    $from = htmlspecialchars($_POST["name"]);
+    if($from == "") {
+      $from = "Anonym";
+    }
+    $mail = htmlspecialchars($_POST["mail"]);
+    $to = "ustinov.nikita.01@gmail.com";
+    $subject = "Question";
+    $messege = htmlspecialchars($_POST["messege"]);
+    $subject = "=?utf-8?B?".base64_encode($subject)."?=";
+    $headers = "From: $from\r\n Reply-to: $mail\r\n Content-type: text/plain: charset=utf-8\r\n";
+    mail($to, $subject, $messege, $headers);
+    // exit;
+  }
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,7 +30,7 @@
       <nav >
         <ul>
           <a href="index.html"><li>Main</li></a>
-          <a href="appointments.html"><li>Appointments</li></a>
+          <a href="appointments.php"><li>Appointments</li></a>
           <li>Contact</li>
           <a href="about.html"> <li>About us</li></a>
           <a href="#"><li>Interesting</li></a>
@@ -33,7 +51,7 @@
             <p>mon.-fr. : 8:00 - 16:00</p>
             <p>Also you can phone me in the same time on 335 569 770</p>
           </div>
-          <form class="feedback">
+          <form class="feedback" action="" method="post">
             <h3>We defenetly answer you!</h3>
             <div class="your_name">
               <input type="text" name="name" placeholder="What is your name?">
@@ -43,8 +61,8 @@
               <input type="email" name="mail" placeholder="Youe mail?" required>
               <label class="hidden">What is your email?</label>
             </div>
-            <textarea rows="10" cols="41" placeholder="Your question" required></textarea><br/>
-            <input type="submit" value="Send" class="btn"></input>
+            <textarea name="messege" rows="10" cols="41" placeholder="Your question" required></textarea><br/>
+            <input type="submit" name="send"  value="Send" class="btn"></input>
           </form>
         </div>
       </section>
