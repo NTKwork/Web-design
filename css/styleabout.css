@@ -79,6 +79,34 @@ section {
     box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
 }
 
+.resize {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+}
+
+.resize_bg {
+    background:rgba(0,0,0,0.8);
+    position:absolute;
+    z-index:1;
+    height:100%;
+    width:100%;
+}
+
+
+.resize_img {
+    position: relative;
+    margin:2rem auto;
+    z-index:2;
+    max-height:94%;
+    max-width:94%;
+
+}
+
 footer {
     background: #04376C;
     margin-top: 3rem;
