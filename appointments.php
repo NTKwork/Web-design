@@ -1,3 +1,16 @@
+<?php
+    if(isset($_POST["send"])) {
+      $from = htmlspecialchars($_POST["from"]);
+      $to = "ustinov.nikita.01@gmail.com";
+      $subject = htmlspecialchars($_POST["subject"]);
+      $messege = htmlspecialchars($_POST["messege"]);
+
+      $subject = "=?utf-8?B?".base64_encode($subject)."?=";
+      $headers = "From: $from\r\n Reply-to: $from\r\n Content-type: text/plain: charset=utf-8\r\n";
+      mail($to, $subject, $messege, $headers);
+    }
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -56,12 +69,14 @@
             <a class="enroll_button" href="#">Sign up</a>
           </div>
         </article>
-        <article class="enroll_form">
-          <form name="feedback" action="" method="post">
-            <label>From: </label><br/>
-            <input type="text" name="from" value="" placeholder="Youe mail?" required/><br/>
+        <div class="over_lay hidden"></div>
+        <article class="enroll_form hidden">
+          <form name="feedback" action="" method="post" >
+            <button class="close_form"></button>
+            <label class="label_from">From: </label><br/>
+            <input type="email" name="from" value="" placeholder="Youe mail?" required autofocus/><br/>
             <label>Subject: </label><br/>
-            <input type="text" name="subject" value=""/><br/>
+            <input type="text" name="subject" class="subject" value=""/><br/>
             <label>Messege </label> <br/>
             <textarea name="messege" cols="30" rows="10" placeholder="Text a lesson time " required></textarea><br/>
             <input class="enroll_button" type="submit" name="send" value="Send request"/>
@@ -78,4 +93,5 @@
       </section>
     </footer>
   </body>
+  <script src="js/script.js"></script>
 </html>

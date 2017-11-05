@@ -30,7 +30,7 @@
       <nav >
         <ul>
           <a href="index.html"><li>Main</li></a>
-          <a href="appointments.html"><li>Appointments</li></a>
+          <a href="appointments.php"><li>Appointments</li></a>
           <li>Contact</li>
           <a href="about.html"> <li>About us</li></a>
           <a href="#"><li>Interesting</li></a>
