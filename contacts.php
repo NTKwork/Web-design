@@ -14,7 +14,7 @@
         <ul>
           <a href="index.html"><li>Main</li></a>
           <a href="appointments.php"><li>Appointments</li></a>
-          <li>Contact</li>
+          <div><li>Contact</li></div>
           <a href="about.html"> <li>About us</li></a>
           <a href="intresting.html"><li>Interesting</li></a>
         </ul>

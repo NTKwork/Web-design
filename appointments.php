@@ -14,7 +14,7 @@
         <nav>
           <ul>
             <a href="index.html"><li>Main</li></a>
-            <li>Appointments</li>
+            <div><li>Appointments</li></div>
             <a href="contacts.php"><li>Contact</li></a>
             <a href="about.html"> <li>About us</li></a>
             <a href="intresting.html"><li>Interesting</li></a>

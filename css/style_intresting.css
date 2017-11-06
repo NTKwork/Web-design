@@ -33,6 +33,13 @@ nav a, li {
   font-family: Arial, Verdana, sans-serif;
 }
 
+nav div {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: Arial, Verdana, sans-serif;
+}
+
 nav a:hover,
 nav a:focus,
 nav a:active {
