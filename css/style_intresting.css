@@ -1,5 +1,5 @@
 body {
-  background-color: #cadab5;
+  background-color: #ada1e6;
   font-family: Arial;
 }
 
@@ -7,7 +7,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #aabaa2;
+  background: #605399;
 }
 
 nav {
@@ -36,60 +36,96 @@ nav a, li {
 nav a:hover,
 nav a:focus,
 nav a:active {
-  background-color: #8ea671;
+  background-color: #e4def9;
   color: white;
 }
 
-.container {
-  /*background: rgb(200, 200,200);*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 70rem;
+.contanier {
+  max-width: 1000px;
+  width: 80%;
   margin: 0 auto;
+
 }
 
-iframe {
-  width: 48%;
-  height: 600px;
+.left_side {
+  float:left;
+  width: 30%;
+  min-height: 200px;
+  position: relative;
+  top: 12px;
 }
 
-.address_and_feedback {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  /*justify-content: space-between;*/
-  width: 48%;
-  height: 600px;
-  padding: 20px;
-  background:#aabaa2;
+.left_side ul {
+  shadow: 0 4px 20px 0 rgba(00,00,00,1);
+  box-shadow: 0 4px 20px 0 rgba(00,00,00,1);
+  background: #6053b4;
+  border-radius: 5px;
+}
+
+.left_side li {
+  padding-left: 5px;
+  color: black;
+}
+
+.left_side a {
+  display: block;
+  padding: 3px;
+}
+
+.left_side a:hover {
+  background: #b183fc;
+}
+
+.right_side {
+  float:right;
+  width: 65%;
+  min-height: 200px;
+}
+
+article {
+  background: #6053b4;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  shadow: 0 4px 20px 0 rgba(00,00,00,1);
+  box-shadow: 0 4px 20px 0 rgba(00,00,00,1);
+}
+
+.read_more {
+  display: block;
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #ada1e6;
+  border: 1px black;
+  padding: 6px 10px 5px 10px;
+  height: 30px;
+  text-decoration: none;
+  color: black;
   box-sizing: border-box;
 }
 
-.contact_information p {
-  margin-top: 0;
+.read_more:active{
+  background: #9859ff;
+  shadow: 0 4px 10px 0 rgba(00,00,00,1);
+  box-shadow: 0 4px 10px 0 rgba(00,00,00,1);
 }
 
-.feedback {
-  margin-top: 110px;
-}
-
-.feedback input {
+img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
   border-radius: 5px;
-  padding-left: 4px;
 }
 
-.feedback label {
-  padding-left: 4px;
-}
 
-form div {
-  padding: 0 10px 15px 0;
-}
+
+
 
 footer {
   height: 36px;
-  background: #aabaa2;
+  background: #605399;
   margin-top: 30px;
 }
 
@@ -130,4 +166,10 @@ footer a {
   /*background-position: center center; /* Положение фона */
   background-repeat: no-repeat;*/
   background-color:#6c7e7d;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
