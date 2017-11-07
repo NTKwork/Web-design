@@ -1,4 +1,13 @@
-<?php
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Appointments</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style_appointments.css" rel="stylesheet">
+  </head>
+  <body>
+  <?php
     if(isset($_POST["send"])) {
       $from = htmlspecialchars($_POST["from"]);
       $to = "ustinov.nikita.01@gmail.com";
@@ -10,16 +19,6 @@
       mail($to, $subject, $messege, $headers);
     }
 ?>
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Appointments</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style_appointments.css" rel="stylesheet">
-  </head>
-  <body>
     <header>
       <nav>
         <ul>
