@@ -2,6 +2,12 @@ body {
   background-color: #cadab5;
   font-family: Arial;
   margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
 }
 
 header {
@@ -29,6 +35,13 @@ li {
 }
 
 nav a, li {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+nav div {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   display: inline-block;
   font-size: 1.1em;
@@ -186,7 +199,11 @@ nav a:active {
 footer {
   height: 36px;
   background: #aabaa2;
-  margin-top: 30px;
+  margin-top:140px;
+  /*position: absolute;*/
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .social {

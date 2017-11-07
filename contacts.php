@@ -9,32 +9,14 @@
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
   </head>
   <body>
-  <?php
-  session_start();
-  if(isset($_POST["send"])) {
-    $from = htmlspecialchars($_POST["name"]);
-    if($from == "") {
-      $from = "Anonym";
-    }
-    $mail = htmlspecialchars($_POST["mail"]);
-    $to = "ustinov.nikita.01@gmail.com";
-    $subject = "Question";
-    $messege = htmlspecialchars($_POST["messege"]);
-    $subject = "=?utf-8?B?".base64_encode($subject)."?=";
-    $headers = "From: $from\r\n Reply-to: $mail\r\n Content-type: text/plain: charset=utf-8\r\n";
-    mail($to, $subject, $messege, $headers);
-    // exit;
-  }
-?>
-
     <header>
       <nav >
         <ul>
           <a href="index.html"><li>Main</li></a>
           <a href="appointments.php"><li>Appointments</li></a>
-          <li>Contact</li>
+          <div><li>Contact</li></div>
           <a href="about.html"> <li>About us</li></a>
-          <a href="#"><li>Interesting</li></a>
+          <a href="intresting.html"><li>Interesting</li></a>
         </ul>
       </nav>
     </header>
@@ -56,7 +38,7 @@
             <h3>We defenetly answer you!</h3>
             <div class="your_name">
               <input type="text" name="name" placeholder="What is your name?">
-              <label for="your_name_input">What is your name?</label>
+              <label for="your_name_input"> What is your name?</label>
             </div>
             <div class="your_mail">
               <input type="email" name="mail" placeholder="Youe mail?" required>
@@ -77,4 +59,5 @@
       </section>
     </footer>
   </body>
+  <?php require 'contacts.php'; ?>
 </html>
