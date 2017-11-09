@@ -3,7 +3,7 @@ body {
 }
 
 nav{
-    background-color: #34344c;
+    /*background-color: #34344c;*/
     text-align: center;
 }
 
@@ -16,6 +16,25 @@ nav a {
     font-family: Arial, Verdana, sans-serif;
 }
 
+.a_main {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: Arial, Verdana, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.a_main:hover{
+    background-color: #5c5c8a;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 nav a:hover,
 nav a:focus,
 nav a:active {
@@ -25,47 +44,47 @@ nav a:active {
 }
 
 
-    .container {
-        width: 70rem;
-        margin: 0 auto;
-    }
+.container {
+    width: 70rem;
+    margin: 0 auto;
+}
 
-    .background {
-        background-color: white;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        -webkit-border-radius: 20px 20px 20px 20px;
-        border-radius: 20px 20px 20px 20px;
-    }
+.background {
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+}
 
-    .image {
+.image {
 
-        background-image: url("http://www.zastavki.com/pictures/originals/2013/Nature__039469_.jpg");
-        -webkit-border-radius: 20px 20px 0 0;
-        border-radius: 20px 20px 0 0;
-        background-position: center center;
-        background-size: 100%;
-        height: 18rem;
+    background-image: url("http://www.zastavki.com/pictures/originals/2013/Nature__039469_.jpg");
+    -webkit-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    background-position: center center;
+    background-size: 100%;
+    height: 18rem;
 
-    }
+}
 
-    .menu
-    {
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
-    }
+.menu
+{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-    .text {
-        height: 18rem;
-        padding: 2rem 1rem 2rem 1rem;
-        text-align: center;
-        font-family: MS Sans Serif, sans-serif;
-        font-size: 1.3em;
-        color: rgba(00,00,00,0.6);
-    }
+.text {
+    height: 18rem;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    font-family: MS Sans Serif, sans-serif;
+    font-size: 1.3em;
+    color: rgba(00,00,00,0.6);
+}
 
 h1 {
         color: rgba(00,00,00,0.8);

@@ -1,5 +1,5 @@
 body {
-  background-color: #ada1e6;
+  background-color: #34344c;
   font-family: Arial;
 }
 
@@ -7,7 +7,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #605399;
+  background: #34344c;
 }
 
 nav {
@@ -33,11 +33,35 @@ nav a, li {
   font-family: Arial, Verdana, sans-serif;
 }
 
+nav div {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: Arial, Verdana, sans-serif;
+}
+
 nav a:hover,
 nav a:focus,
 nav a:active {
-  background-color: #e4def9;
+  background-color: #5c5c8a;
   color: white;
+  border-radius: 8px;
+}
+
+nav div:hover{
+    background-color: #5c5c8a;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.main {
+  background: #f0f8ff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
+  box-shadow: 0 0 40px 0 rgba(255,255,255,1);
+  padding: 30px;
 }
 
 .contanier {
@@ -58,7 +82,7 @@ nav a:active {
 .left_side ul {
   shadow: 0 4px 20px 0 rgba(00,00,00,1);
   box-shadow: 0 4px 20px 0 rgba(00,00,00,1);
-  background: #6053b4;
+  background: #c2c2c2;
   border-radius: 5px;
 }
 
@@ -73,7 +97,7 @@ nav a:active {
 }
 
 .left_side a:hover {
-  background: #b183fc;
+  background: #a8a8a8;
 }
 
 .right_side {
@@ -83,7 +107,7 @@ nav a:active {
 }
 
 article {
-  background: #6053b4;
+  background: #c2c2c2;
   margin-bottom: 20px;
   padding: 5px;
   padding-top: 10px;
@@ -99,7 +123,7 @@ article {
 
 footer {
   height: 36px;
-  background: #605399;
+  background: #34344c;
   margin-top: 30px;
 }
 

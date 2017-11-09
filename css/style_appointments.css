@@ -1,5 +1,5 @@
 body {
-  background-color: #cadab5;
+  background-color: #34344c;//34344c //f0f8ff
   font-family: Arial;
   margin: 0;
   height: 100%;
@@ -14,7 +14,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #aabaa2;
+  background: #34344c;
   margin-bottom: 20px;
 }
 
@@ -48,11 +48,20 @@ nav div {
   font-family: Arial, Verdana, sans-serif;
 }
 
+nav div:hover{
+    background-color: #5c5c8a;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 nav a:hover,
 nav a:focus,
 nav a:active {
-  background-color: #8ea671;
+  background-color: #5c5c8a;
   color: white;
+  border-radius: 8px;
 }
 
 .container {
@@ -62,6 +71,8 @@ nav a:active {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+  padding: 30px;
+  opacity: 0.98;
 }
 
 .choose_lesson_type {
@@ -69,23 +80,31 @@ nav a:active {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content:space-between;
+  background: #f0f8ff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
+  box-shadow: 0 0 40px 0 rgba(255,255,255,1);
 }
 
 .choose_lesson_type article {
-  background-color: #8ea671;
+  background-color: #f5f5f5;
+  border: solid 1px #5c5c8a;
   width: 200px;
   height: 350px;
   margin-left: 20px;
   margin-bottom: 40px;
-  padding: 15px;
+  /*padding: 15px;*/
   position: relative;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /*-webkit-box-shadow: 20px 10px 20px 20px #7A7C85;
+  box-shadow: 0 10px 20px 0 #7A7C85;*/
 }
 
 .choose_lesson_type img {
-  width: 200px;
-  height:155px;
-
+  width: 198px;
+  height:154px;
+  border-radius: 20px 20px 0 0;
 }
 
 .online_counseling img {
@@ -95,11 +114,12 @@ nav a:active {
 
 .bottom_part {
   position: relative;
-  bottom: -20px;
+  /*bottom: -20px;*/
+  margin: 20px;
 }
 
 .diagnostics .bottom_part {
-  bottom: -47px;
+  bottom: -26px;
 }
 
 .line {
@@ -125,15 +145,29 @@ nav a:active {
   margin-bottom: 20px
 }
 
+.enroll_button:active {
+  -webkit-box-shadow: 0 10px 20px 0 #545763;
+  box-shadow: 0 10px 20px 0 #545763;
+}
+
+
 .choose_lesson_type  .enroll_form {
   width: 420px;
   border-radius: 10px;
   padding-bottom: 25px;
+  position: absolute;
+  top: auto;
+  padding: 20px;
+  height: auto;
 }
 
 .choose_lesson_type .enroll_form {
-  position: absolute;
-  top: auto;
+
+}
+
+.description {
+  width: 46%;
+  float:right;
 }
 
 .enroll_form input {
@@ -167,14 +201,15 @@ nav a:active {
   height: 18px;
   background: none;
   box-shadow: none;
-  left: 451px;
+  left: 411px;
+  top: -16px;
   border: none;
   z-index: 50;
 }
 
 .close_form::before {
   position: absolute;
-  background: black;
+  background: white;
   display: block;
   content: "";
   width: 19px;
@@ -189,7 +224,7 @@ nav a:active {
   left: -2px;
   transform: rotate(-45deg);
   position: absolute;
-  background: black;
+  background: white;
   display: block;
   content: "";
   width: 19px;
@@ -198,7 +233,7 @@ nav a:active {
 
 footer {
   height: 36px;
-  background: #aabaa2;
+  background: #34344c;
   margin-top:140px;
   /*position: absolute;*/
   left: 0;
