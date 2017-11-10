@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Appointments</title>
     <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+    <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
     <link href="css/style_appointments.css" rel="stylesheet">
   </head>
   <body>

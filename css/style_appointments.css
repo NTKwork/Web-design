@@ -1,6 +1,6 @@
 body {
-  background-color: #34344c;//34344c //f0f8ff
-  font-family: Arial;
+  background-color: #34344c;
+  font-family: Arial, Verdana, sans-serif;
   margin: 0;
   height: 100%;
 }
@@ -23,7 +23,6 @@ nav {
 }
 
 ul {
-  margin-left: 0;
   padding-left: 0;
   margin: 0;
 }
@@ -37,6 +36,7 @@ li {
 nav a, li {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   display: inline-block;
+  text-decoration: none;
   font-size: 1.1em;
   font-family: Arial, Verdana, sans-serif;
 }
@@ -60,6 +60,7 @@ nav a:hover,
 nav a:focus,
 nav a:active {
   background-color: #5c5c8a;
+  text-decoration: none;
   color: white;
   border-radius: 8px;
 }
@@ -91,9 +92,7 @@ nav a:active {
   /*border: solid 1px #5c5c8a;*/
   width: 200px;
   height: 350px;
-  margin-left: 20px;
-  margin-bottom: 40px;
-  /*padding: 15px;*/
+  margin: 40px;
   position: relative;
   border-radius: 10px;
   box-sizing: border-box;
@@ -136,9 +135,7 @@ nav a:active {
   height: 30px;
   background: #34344c;
   text-align: center;
-  padding-top: 6px;
   box-sizing: border-box;
-  color: black;
   border-radius: 10px;
   box-shadow: none;
   padding-top: 5px;
@@ -155,16 +152,13 @@ nav a:active {
 .choose_lesson_type  .enroll_form {
   width: 420px;
   border-radius: 10px;
-  padding-bottom: 25px;
   position: absolute;
   top: auto;
   padding: 20px;
+  padding-bottom: 25px;
   height: auto;
 }
 
-.choose_lesson_type .enroll_form {
-
-}
 
 .description {
   width: 46%;
@@ -263,21 +257,21 @@ footer a {
 .tw {
   background-image: url(../img/tw.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-color:#6c7e7d;
 }
 
 .inst {
   background-image: url(../img/inst.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-color:#6c7e7d;
 }
 
 .fb {
   background-image: url(../img/fb.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-color:#6c7e7d;
 }
 
