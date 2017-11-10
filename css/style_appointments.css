@@ -1,8 +1,7 @@
 body {
   background-color: #34344c;
   font-family: Arial, Verdana, sans-serif;
-  margin: 0;
-  height: 100%;
+
 }
 
 .wrapper {
@@ -15,7 +14,7 @@ header {
   flex-direction: column;
   justify-content: center;
   background: #34344c;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
 
 nav {
@@ -53,7 +52,7 @@ nav div:hover{
     text-decoration: none;
     color: white;
     cursor: pointer;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 }
 
 nav a:hover,
@@ -62,7 +61,7 @@ nav a:active {
   background-color: #5c5c8a;
   text-decoration: none;
   color: white;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
 }
 
 .container {
@@ -70,10 +69,11 @@ nav a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
+  width: 75rem;
   margin: 0 auto;
   padding: 30px;
-  opacity: 0.98;
+  /*opacity: 0.98;*/
+  /*display: none;*/
 }
 
 .choose_lesson_type {
@@ -81,7 +81,8 @@ nav a:active {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content:space-between;
-  background: #f0f8ff;
+  /*background: #f0f8ff;*/
+  background-color: white;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
   box-shadow: 0 0 40px 0 rgba(255,255,255,1);

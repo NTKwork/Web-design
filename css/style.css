@@ -1,8 +1,7 @@
 body {
     background-color: #34344c;
     font-family: Arial, Verdana, sans-serif;
-    margin: 0;
-    height: 100%;
+
 }
 
 .wrapper {
@@ -15,7 +14,7 @@ header {
     flex-direction: column;
     justify-content: center;
     background: #34344c;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 nav{
@@ -55,7 +54,7 @@ nav div:hover{
     text-decoration: none;
     color: white;
     cursor: pointer;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 }
 
 nav a:hover,
@@ -64,7 +63,7 @@ nav a:active {
     background-color: #5c5c8a;
     text-decoration: none;
     color: white;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 }
 
 

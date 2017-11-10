@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <title>Find us</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style_container.css" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+    <link href="css/style_container.css" rel="stylesheet">
   </head>
   <body>
+  <div class=wrapper>
     <header>
       <nav >
         <ul>
@@ -58,6 +59,7 @@
         <!-- <a href="#" class="vk"></a> -->
       </section>
     </footer>
+  </div>
   </body>
   <?php require 'contacts.php'; ?>
 </html>

@@ -1,42 +1,80 @@
 body {
-    background-color: #04376C;
+    background-color: #34344c;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #34344c;
+    margin-bottom: 1px;
 }
 
 nav{
-    background-color: #04376C;
+    /*background-color: #04376C;*/
     text-align: center;
 }
 
-nav a {
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
+nav a, li {
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     display: inline-block;
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: Arial, Verdana, sans-serif;
+}
+
+nav div {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+nav div:hover{
+    background-color: #5c5c8a;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    /*border-radius: 8px;*/
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-    background-color: #4188D2;
+    background-color: #5c5c8a;
+    text-decoration: none;
     color: white;
-}
-
-
-.container {
-    width: 70rem;
-    margin: 0 auto;
+    /*border-radius: 8px;*/
 }
 
 section {
+    width: 70rem;
+    margin: 0 auto;
     background-color: white;
     -webkit-box-shadow: 0 0 60px 0 rgba(255,255,255,1);
     box-shadow: 0 0 60px 0 rgba(255,255,255,1);
     display: flex;
     flex-flow: row wrap;
     border-radius: 20px;
-    height: 550px;
+    height: auto;
 }
 .text{
     width: 40rem;
@@ -55,7 +93,7 @@ section {
 
 .portrait img {
     border: solid;
-    border-color: #4188D2;
+    border-color: #5c5c8a;
     -webkit-box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
     box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
     border-radius: 20px;
@@ -73,7 +111,7 @@ section {
     width: 200px;
     height: 150px;
     border: solid;
-    border-color: #4188D2;
+    border-color: #5c5c8a;
     border-radius: 20px;
     -webkit-box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
     box-shadow: 15px 15px 50px 0 rgba(19,19,19,1);
@@ -108,7 +146,7 @@ section {
 }
 
 footer {
-    background: #04376C;
+    background: #34344c;
     margin-top: 3rem;
     padding: 1.5rem;
     display: flex;
@@ -118,7 +156,7 @@ footer {
 }
 
 .soc {
-    background: #04376C;
+    background: #34344c;
 
     display: flex;
     flex-direction: row;
@@ -141,26 +179,26 @@ footer .soc a {
     background-image: url(../img/tw.png);
     /*background-position: center center; /* Положение фона */
     background-repeat: no-repeat;
-background-color:#04376C;
+background-color:#34344c;
 }
 
 .inst {
     background-image: url(../img/inst.png);
     /*background-position: center center; /* Положение фона */
     background-repeat: no-repeat;
-background-color:#04376C;
+background-color:#34344c;
 }
 
 .fb {
     background-image: url(../img/fb.png);
     /*background-position: center center; /* Положение фона */
     background-repeat: no-repeat;
-background-color:#04376C;
+background-color:#34344c;
 }
 .vk {
     background-image: url(../img/vk.png);
     background-repeat: no-repeat;
-    background-color:#04376C;
+    background-color:#34344c;
 }
 
 footer .cop p {
