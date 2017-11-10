@@ -88,7 +88,7 @@ nav a:active {
 
 .choose_lesson_type article {
   background-color: #f5f5f5;
-  border: solid 1px #5c5c8a;
+  /*border: solid 1px #5c5c8a;*/
   width: 200px;
   height: 350px;
   margin-left: 20px;
@@ -97,14 +97,14 @@ nav a:active {
   position: relative;
   border-radius: 10px;
   box-sizing: border-box;
-  /*-webkit-box-shadow: 20px 10px 20px 20px #7A7C85;
-  box-shadow: 0 10px 20px 0 #7A7C85;*/
+  -webkit-box-shadow: 20px 10px 20px 20px #7A7C85;
+  box-shadow: 0 10px 20px 5px #7A7C85;
 }
 
 .choose_lesson_type img {
-  width: 198px;
+  width: 200px;
   height:154px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .online_counseling img {
@@ -134,7 +134,7 @@ nav a:active {
   display: block;
   width: 125px;
   height: 30px;
-  background: #6c7e7d;
+  background: #34344c;
   text-align: center;
   padding-top: 6px;
   box-sizing: border-box;
@@ -142,7 +142,8 @@ nav a:active {
   border-radius: 10px;
   box-shadow: none;
   padding-top: 5px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  color: #f0f8ff;
 }
 
 .enroll_button:active {
