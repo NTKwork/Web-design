@@ -1,43 +1,52 @@
 body {
-  background-color: #34344c;
-  font-family: Arial;
+    background-color: #34344c;
+    font-family: Arial, Verdana, sans-serif;
+
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #34344c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #34344c;
+    margin-bottom: 1px;
 }
 
-nav {
-  text-align: center;
+nav{
+    /*background-color: #34344c;*/
+    text-align: center;
 }
 
 ul {
-  margin-left: 0;
-  padding-left: 0;
-  margin-top: 0;
+    padding-left: 0;
+    margin: 0;
 }
 
 li {
-  list-style-type: none;
-  color: white;
-  text-decoration: none;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
 }
 
 nav a, li {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  display: inline-block;
-  font-size: 1.1em;
-  font-family: Arial, Verdana, sans-serif;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: Arial, Verdana, sans-serif;
 }
 
 nav div {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  display: inline-block;
-  font-size: 1.1em;
-  font-family: Arial, Verdana, sans-serif;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: Arial, Verdana, sans-serif;
 }
 
 nav div:hover{
@@ -45,16 +54,18 @@ nav div:hover{
     text-decoration: none;
     color: white;
     cursor: pointer;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-  background-color: #5c5c8a;
-  color: white;
-  border-radius: 8px;
+    background-color: #5c5c8a;
+    text-decoration: none;
+    color: white;
+    /*border-radius: 8px;*/
 }
+
 
 .container {
   /*background: rgb(200, 200,200);*/
@@ -110,18 +121,12 @@ form div {
     height: 30px;
     background: #6c7e7d;
     text-align: center;
-    padding-top: 6px;
     box-sizing: border-box;
     color: black;
     border-radius: 10px;
     box-shadow: none;
     padding-top: 5px;
     margin-bottom: 20px;
-}
-
-.btn:active {
-  /*-webkit-box-shadow: 0 10px 20px 0 #545763;
-  box-shadow: 0 10px 20px 0 #545763;*/
 }
 
 .btn:focus {
@@ -156,20 +161,20 @@ footer a {
 .tw {
   background-image: url(../img/tw.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
-  background-color:#6c7e7d;
+  background-repeat: no-repeat;
+  background-color:#34344c;
 }
 
 .inst {
   background-image: url(../img/inst.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
-  background-color:#6c7e7d;
+  background-repeat: no-repeat;
+  background-color:#34344c;
 }
 
 .fb {
   background-image: url(../img/fb.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
-  background-color:#6c7e7d;
+  background-repeat: no-repeat;
+  background-color:#34344c;
 }

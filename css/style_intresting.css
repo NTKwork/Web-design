@@ -1,6 +1,11 @@
 body {
   background-color: #34344c;
-  font-family: Arial;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
 }
 
 header {
@@ -8,6 +13,7 @@ header {
   flex-direction: column;
   justify-content: center;
   background: #34344c;
+  margin-bottom: 1px;
 }
 
 nav {
@@ -15,9 +21,8 @@ nav {
 }
 
 ul {
-  margin-left: 0;
   padding-left: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 li {
@@ -29,6 +34,8 @@ li {
 nav a, li {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   display: inline-block;
+  color: white;
+  text-decoration: none;
   font-size: 1.1em;
   font-family: Arial, Verdana, sans-serif;
 }
@@ -40,24 +47,28 @@ nav div {
   font-family: Arial, Verdana, sans-serif;
 }
 
+nav div:hover{
+  background-color: #5c5c8a;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  /*border-radius: 8px;*/
+}
+
 nav a:hover,
 nav a:focus,
 nav a:active {
   background-color: #5c5c8a;
+  text-decoration: none;
   color: white;
-  border-radius: 8px;
+  z-index: 100;
+  /*border-radius: 8px;*/
 }
 
-nav div:hover{
-    background-color: #5c5c8a;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-}
+
 
 .main {
-  background: #f0f8ff;
+  background-color: #f0f8ff;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
   box-shadow: 0 0 40px 0 rgba(255,255,255,1);
@@ -80,7 +91,6 @@ nav div:hover{
 }
 
 .left_side ul {
-  shadow: 0 4px 20px 0 rgba(00,00,00,1);
   box-shadow: 0 4px 20px 0 rgba(00,00,00,1);
   background: #c2c2c2;
   border-radius: 5px;
@@ -112,7 +122,6 @@ article {
   padding: 5px;
   padding-left: 11px;
   border-radius: 5px;
-  shadow: 0 4px 20px 0 rgba(00,00,00,1);
   box-shadow: 0 4px 20px 0 rgba(00,00,00,1);
 }
 
@@ -123,7 +132,6 @@ article {
   height: 30px;
   background: #6c7e7d;
   text-align: center;
-  padding-top: 6px;
   box-sizing: border-box;
   color: black;
   border-radius: 10px;
@@ -134,7 +142,6 @@ article {
 
 .read_more:active{
   background: #a8a8a8;
-  shadow: 0 4px 10px 0 #545763;
   box-shadow: 0 4px 10px 0 #545763;
 }
 
@@ -144,10 +151,6 @@ img {
   margin-right: 10px;
   border-radius: 5px;
 }
-
-
-
-
 
 footer {
   height: 36px;
@@ -176,21 +179,21 @@ footer a {
 .tw {
   background-image: url(../img/tw.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-color:#6c7e7d;
 }
 
 .inst {
   background-image: url(../img/inst.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-color:#6c7e7d;
 }
 
 .fb {
   background-image: url(../img/fb.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-color:#6c7e7d;
 }
 

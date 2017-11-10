@@ -1,5 +1,17 @@
 body {
     background-color: #34344c;
+<<<<<<< HEAD
+=======
+    font-family: Arial, Verdana, sans-serif;
+
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+>>>>>>> 317085fc3f19f92298a867c13da4e1a5ad52171a
 }
 
 nav{
@@ -33,6 +45,10 @@ nav a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+<<<<<<< HEAD
+=======
+    /*border-radius: 8px;*/
+>>>>>>> 317085fc3f19f92298a867c13da4e1a5ad52171a
 }
 
 nav a:hover,
@@ -41,6 +57,9 @@ nav a:active {
     background-color: #5c5c8a;
     text-decoration: none;
     color: white;
+<<<<<<< HEAD
+=======
+>>>>>>> 317085fc3f19f92298a867c13da4e1a5ad52171a
 }
 
 

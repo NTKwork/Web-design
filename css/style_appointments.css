@@ -1,8 +1,11 @@
 body {
+<<<<<<< HEAD
   background-color: #34344c;//34344c //f0f8ff
   font-family: Arial;
   margin: 0;
   height: 100%;
+=======
+>>>>>>> 317085fc3f19f92298a867c13da4e1a5ad52171a
 }
 
 .wrapper {
@@ -73,6 +76,7 @@ nav a:active {
   margin: 0 auto;
   padding: 30px;
   opacity: 0.98;
+  /*display: none;*/
 }
 
 .choose_lesson_type {
@@ -81,6 +85,7 @@ nav a:active {
   justify-content: space-evenly;
   align-content:space-between;
   background: #f0f8ff;
+  /*background: #f0f8ff;*/
   border-radius: 20px;
   -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
   box-shadow: 0 0 40px 0 rgba(255,255,255,1);
