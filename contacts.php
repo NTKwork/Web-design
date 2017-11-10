@@ -30,9 +30,9 @@
         <!-- </div> -->
         <div class="address_and_feedback">
           <div class="contact_information">
-            <p>You can find me here: Praha praha praha</p>
-            <p>mon.-fr. : 8:00 - 16:00</p>
-            <p>Also you can phone me in the same time on 335 569 770</p>
+            <p>You can find me here: Technická 2710/6, 160 00 Praha 6-Dejvice, </p>
+            <p>Also you can phone me in the same time on: 335 569 770</p>
+            <p>Mon.-Fr. : 8:00 - 16:00</p>
           </div>
           <form class="feedback" action="" method="post">
             <h3>We defenetly answer you!</h3>
