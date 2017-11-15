@@ -1,5 +1,4 @@
 <?php
-session_start();
 if(isset($_POST["send"])) {
   $from = htmlspecialchars($_POST["name"]);
   if($from == "") {

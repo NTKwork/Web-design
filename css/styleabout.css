@@ -4,8 +4,7 @@ body {
 }
 
 .wrapper {
-    position: relative;
-    min-height: 100%;
+  min-height: calc(100vh - 120px);
 }
 
 header {
@@ -168,8 +167,7 @@ footer .soc a {
     display: inline-block;
     width: 30px;
     height:30px;
-    margin: 1rem;
-    margin-top: 1px;
+    margin: 0 1rem 0 1rem;
     border-radius: 50%;
     background-position: center center; /* Положение фона */
     background-repeat: no-repeat;
@@ -179,21 +177,21 @@ footer .soc a {
     background-image: url(../img/tw.png);
     /*background-position: center center; /* Положение фона */
     background-repeat: no-repeat;
-background-color:#34344c;
+    background-color:#34344c;
 }
 
 .inst {
     background-image: url(../img/inst.png);
     /*background-position: center center; /* Положение фона */
     background-repeat: no-repeat;
-background-color:#34344c;
+    background-color:#34344c;
 }
 
 .fb {
     background-image: url(../img/fb.png);
     /*background-position: center center; /* Положение фона */
     background-repeat: no-repeat;
-background-color:#34344c;
+    background-color:#34344c;
 }
 .vk {
     background-image: url(../img/vk.png);
@@ -206,5 +204,3 @@ footer .cop p {
     color: ghostwhite;
     margin-bottom: 0;
 }
-
-

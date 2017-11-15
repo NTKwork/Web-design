@@ -44,7 +44,7 @@ nav div {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   display: inline-block;
   font-size: 1.1em;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: Arial, Verdana, sans-serif;height: 39px;
 }
 
 nav div:hover{
@@ -180,21 +180,27 @@ footer a {
   background-image: url(../img/tw.png);
   /*background-position: center center; /* Положение фона */
   background-repeat: no-repeat;
-  background-color:#6c7e7d;
+  background-color:#34344c;
 }
 
 .inst {
   background-image: url(../img/inst.png);
   /*background-position: center center; /* Положение фона */
   background-repeat: no-repeat;
-  background-color:#6c7e7d;
+  background-color:#34344c;
 }
 
 .fb {
   background-image: url(../img/fb.png);
   /*background-position: center center; /* Положение фона */
   background-repeat: no-repeat;
-  background-color:#6c7e7d;
+  background-color:#34344c;
+}
+
+.vk {
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    background-color:#34344c;
 }
 
 .clearfix::after {

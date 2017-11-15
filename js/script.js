@@ -19,8 +19,8 @@ btn2.addEventListener("click", function(e) {
   hidden_form.classList.toggle("not_hidden");
   form[2].value = "Lesson with children";
   over_lay.classList.toggle("not_hidden");
-  var p = document.querySelector(".de3ription p");
-  p.innerText=" 1" ;
+  var p = document.querySelector(".description p");
+  p.innerText=" At these lessons children will be able to purchase self-confidence, acquire effective communication skills, learn regulate oneself, remove anxiety, change aggressive behavior on cooperation and so on." ;
 });
 
 btn3.addEventListener("click", function(e) {

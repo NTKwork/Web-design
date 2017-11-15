@@ -9,7 +9,6 @@
     <link href="css/style_container.css" rel="stylesheet">
   </head>
   <body>
-  <div class=wrapper>
     <header>
       <nav >
         <ul>
@@ -22,44 +21,45 @@
       </nav>
     </header>
     <main>
-      <section class="container">
-        <!-- <div class="map"> -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.1314369490146!2d14.391060453173381!3d50.
-        102546748189134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b953a5a7be311%3A0xa16f4b91c064185e!2sBrit
-        ish+Council+(in+National+Technical+Library)!5e0!3m2!1sru!2sru!4v1507466155906"
-         frameborder="0" style="border:0" allowfullscreen></iframe>
-        <!-- </div> -->
-        <div class="address_and_feedback">
-          <div class="contact_information">
-            <p>You can find me here: Technická 2710/6, 160 00 Praha 6-Dejvice, </p>
-            <p>Also you can phone me in the same time on: 335 569 770</p>
-            <p>Mon.-Fr. : 8:00 - 16:00</p>
+      <div class=wrapper>
+        <section class="container">
+          <!-- <div class="map"> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.1314369490146!2d14.391060453173381!3d50.
+          102546748189134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b953a5a7be311%3A0xa16f4b91c064185e!2sBrit
+          ish+Council+(in+National+Technical+Library)!5e0!3m2!1sru!2sru!4v1507466155906"
+           frameborder="0" style="border:0" allowfullscreen></iframe>
+          <!-- </div> -->
+          <div class="address_and_feedback">
+            <div class="contact_information">
+              <p>You can find me here: Technická 2710/6, 160 00 Praha 6-Dejvice,</p>
+              <p>mon.-fr. : 8:00 - 16:00</p>
+              <p>Also you can phone me in the same time on 335 569 770</p>
+            </div>
+            <form class="feedback" action="" method="post">
+              <h3>We defenetly answer you!</h3>
+              <div class="your_name">
+                <input type="text" name="name" placeholder="What is your name?">
+                <label for="your_name_input"> What is your name?</label>
+              </div>
+              <div class="your_mail">
+                <input type="email" name="mail" placeholder="Your mail?" required>
+                <label class="hidden">What is your email?</label>
+              </div>
+              <textarea name="messege" rows="10" cols="41" placeholder="Your question" required></textarea><br/>
+              <input type="submit" name="send"  value="Send" class="btn">
+            </form>
           </div>
-          <form class="feedback" action="" method="post">
-            <h3>We defenetly answer you!</h3>
-            <div class="your_name">
-              <input type="text" name="name" placeholder="What is your name?">
-              <label for="your_name_input"> What is your name?</label>
-            </div>
-            <div class="your_mail">
-              <input type="email" name="mail" placeholder="Youe mail?" required>
-              <label class="hidden">What is your email?</label>
-            </div>
-            <textarea name="messege" rows="10" cols="41" placeholder="Your question" required></textarea><br/>
-            <input type="submit" name="send"  value="Send" class="btn"></input>
-          </form>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer>
       <section class="social contanier">
-        <a href="#" class="tw"></a>
-        <a href="#" class="inst"></a>
-        <a href="#" class="fb"></a>
-        <!-- <a href="#" class="vk"></a> -->
+        <a href="https://twitter.com/hightower_01" class="tw"></a>
+        <a href="https://www.instagram.com/irinachibis/" class="inst"></a>
+        <a href="https://www.facebook.com/ekaterina.valkovskaya.7" class="fb"></a>
+        <a href="https://vk.com/id143216691" class="vk"></a>
       </section>
     </footer>
-  </div>
   </body>
-  <?php require 'contacts.php'; ?>
+  <?php require 'php/contacts.php'; ?>
 </html>

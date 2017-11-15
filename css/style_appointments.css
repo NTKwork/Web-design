@@ -1,19 +1,11 @@
 body {
-<<<<<<< HEAD
-  background-color: #34344c;//34344c //f0f8ff
-  font-family: Arial;
-  margin: 0;
-  height: 100%;
-=======
   background-color: #34344c;
   font-family: Arial, Verdana, sans-serif;
 
->>>>>>> 317085fc3f19f92298a867c13da4e1a5ad52171a
 }
 
 .wrapper {
-  position: relative;
-  min-height: 100%;
+  min-height: calc(100vh - 120px);
 }
 
 header {
@@ -29,7 +21,6 @@ nav {
 }
 
 ul {
-  margin-left: 0;
   padding-left: 0;
   margin: 0;
 }
@@ -43,6 +34,7 @@ li {
 nav a, li {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   display: inline-block;
+  text-decoration: none;
   font-size: 1.1em;
   font-family: Arial, Verdana, sans-serif;
 }
@@ -66,6 +58,7 @@ nav a:hover,
 nav a:focus,
 nav a:active {
   background-color: #5c5c8a;
+  text-decoration: none;
   color: white;
   /*border-radius: 8px;*/
 }
@@ -78,7 +71,7 @@ nav a:active {
   width: 75rem;
   margin: 0 auto;
   padding: 30px;
-  /*opacity: 0.98;*/
+  /*opacity: 0.98;*/``
   /*display: none;*/
 }
 
@@ -99,9 +92,7 @@ nav a:active {
   /*border: solid 1px #5c5c8a;*/
   width: 200px;
   height: 350px;
-  margin-left: 20px;
-  margin-bottom: 40px;
-  /*padding: 15px;*/
+  margin: 40px;
   position: relative;
   border-radius: 10px;
   box-sizing: border-box;
@@ -144,9 +135,7 @@ nav a:active {
   height: 30px;
   background: #34344c;
   text-align: center;
-  padding-top: 6px;
   box-sizing: border-box;
-  color: black;
   border-radius: 10px;
   box-shadow: none;
   padding-top: 5px;
@@ -163,16 +152,13 @@ nav a:active {
 .choose_lesson_type  .enroll_form {
   width: 420px;
   border-radius: 10px;
-  padding-bottom: 25px;
   position: absolute;
   top: auto;
   padding: 20px;
+  padding-bottom: 25px;
   height: auto;
 }
 
-.choose_lesson_type .enroll_form {
-
-}
 
 .description {
   width: 46%;
@@ -243,7 +229,7 @@ nav a:active {
 footer {
   height: 36px;
   background: #34344c;
-  margin-top:140px;
+  margin-top:10px;
   /*position: absolute;*/
   left: 0;
   bottom: 0;
@@ -261,32 +247,38 @@ footer a {
   display: inline-block;
   width: 30px;
   height:30px;
-  margin-left: 20px;
-  margin-top: 3px;
+  margin: 0 1rem 0 1rem;
   border-radius: 50%;
   background-position: center center; /* Положение фона */
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .tw {
   background-image: url(../img/tw.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
-  background-color:#6c7e7d;
+  background-repeat: no-repeat;
+  background-color:#34344c;
 }
 
 .inst {
   background-image: url(../img/inst.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
-  background-color:#6c7e7d;
+  background-repeat: no-repeat;
+  background-color:#34344c;
 }
 
 .fb {
   background-image: url(../img/fb.png);
   /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;*/
-  background-color:#6c7e7d;
+  background-repeat: no-repeat;
+  background-color:#34344c;
+}
+
+.vk {
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    background-color:#34344c;
 }
 
 
