@@ -3,12 +3,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Find us</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
     <link href="css/style_container.css" rel="stylesheet">
   </head>
   <body>
+  <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+      <label class="btn-menu" for="hmt">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+      </label>
+      <ul class="hidden-menu">
+          <a href="index.html"><li>Main</li></a>
+          <a href="appointments.php"><li>Appointments</li></a>
+          <div><li>Contact</li></div>
+          <a href="about.html"> <li>About us</li></a>
+          <a href="intresting.html"><li>Interesting</li></a>
+      </ul>
     <header>
       <nav >
         <ul>

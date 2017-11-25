@@ -25,6 +25,72 @@ ul {
     margin: 0;
 }
 
+.hidden-menu {
+    display: none;
+    position: fixed;
+    list-style:none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: #34344c;
+    height: 100%;
+    top: 0;
+    left: -200px;
+    transition: left .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+.btn-menu {
+    display: none;
+    color: #34344c;
+    background-color: #5c5c8a;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    width: 30px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+    display: block;
+    height: 5px;
+    background-color: #34344c;
+    margin: 5px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+}
+.btn-menu span.first {
+    margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+    left: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+    left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+    opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+}
+
 li {
     list-style-type: none;
     color: white;
@@ -74,6 +140,7 @@ section {
     flex-flow: row wrap;
     border-radius: 20px;
     height: auto;
+    position: relative;
 }
 .text{
     width: 40rem;
@@ -203,4 +270,19 @@ footer .cop p {
     text-align: center;
     color: ghostwhite;
     margin-bottom: 0;
+}
+@media (max-width: 575px){
+    header{
+        display: none;
+    }
+
+    .hidden-menu
+    {
+        display: block;
+    }
+
+    .btn-menu
+    {
+        display: inherit;
+    }
 }

@@ -12,6 +12,19 @@
   <body>
 
     <div class=wrapper>
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+        <label class="btn-menu" for="hmt">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </label>
+        <ul class="hidden-menu">
+            <a href="index.html"><li>Main</li></a>
+            <div><li>Appointments</li></div>
+            <a href="contacts.php"><li>Contact</li></a>
+            <a href="about.html"> <li>About us</li></a>
+            <a href="intresting.html"><li>Interesting</li></a>
+        </ul>
       <header>
         <nav>
           <ul>

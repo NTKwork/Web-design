@@ -25,6 +25,72 @@ ul {
   margin: 0;
 }
 
+.hidden-menu {
+  display: none;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #34344c;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu {
+  display: none;
+  color: #34344c;
+  background-color: #5c5c8a;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 30px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #34344c;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
 li {
   list-style-type: none;
   color: white;
@@ -44,7 +110,8 @@ nav div {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   display: inline-block;
   font-size: 1.1em;
-  font-family: Arial, Verdana, sans-serif;height: 39px;
+  font-family: Arial, Verdana, sans-serif;
+  height: 39px;
 }
 
 nav div:hover{
@@ -207,4 +274,49 @@ footer a {
   content: "";
   display: table;
   clear: both;
+}
+
+
+/*Small screen*/
+@media only screen and (max-width: 25.063em) {
+
+.left_side {
+  display: none;
+}
+
+.contanier {
+  margin: 0;
+  padding: 10px;
+  /*padding-right: 0;*/
+  width: 94%;
+  border-radius: 0;
+}
+
+.right_side {
+  width: 94%;
+  float: none;
+  margin: 0 auto;
+}
+
+
+footer {
+  margin-top: 7px;
+}
+
+@media (max-width: 575px)
+{
+  header{
+    display: none;
+  }
+
+  .hidden-menu
+  {
+    display: block;
+  }
+
+  .btn-menu
+  {
+    display: inherit;
+  }
+
 }
