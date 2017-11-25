@@ -140,12 +140,10 @@ nav a:active {
     /*border-radius: 8px;*/
 }
 
-main .wrapper{
-    padding: 0 10rem;
-}
+
 
 .background {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     background-color: white;
     -webkit-box-shadow: 0 0 60px 0 rgba(255,255,255,1);
@@ -157,7 +155,7 @@ main .wrapper{
 }
 .text{
     width: 40rem;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     font-family: "MS Sans Serif", sans-serif;
     font-size: 1.1em;
     color: rgba(00,00,00,0.6);
@@ -169,6 +167,7 @@ main .wrapper{
 }
 .portrait {
     padding: 2rem;
+    display: flex;
 }
 
 .portrait img {
@@ -302,19 +301,21 @@ footer .cop p {
     {
         display: inherit;
     }
-    .container {
-        width: 570px;
+    .background{
+        width: 100%;
         max-width: 100%;
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column ;
         border-radius: 0;
         height: auto;
         box-shadow: none;
     }
     .portrait{
-        padding: 2rem auto;
+        background-color: #34344c;
+        justify-content: center;
     }
     .portrait img{
+
         box-shadow: none;
 
     }
