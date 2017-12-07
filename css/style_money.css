@@ -1,167 +1,14 @@
-body {
-  background-color: #34344c;
-  font-family: Arial, Verdana, sans-serif;
-}
-
-.primary {
-  font-size: 1.7em;
-}
-
-.secondary {
-  margin-top: 12px;
-}
-
 h1 {
   display: none;
 }
 
-.wrapper {
-  position: relative;
-  min-height: 100%;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #34344c;
-  margin-bottom: 1px;
-}
-
-nav {
-  text-align: center;
-}
-
-nav ul{
-  padding-left: 0;
-  margin: 0;
-}
-
-.hidden-menu {
-  display: none;
-  position: fixed;
-  list-style: none;
-  flex-direction: column;
-  text-align: center;
-  margin: 0;
-  box-sizing: border-box;
-  height: 215px;
-  background-color: #34344c;
-  width: 100%;
-
-  top: -215px;
-  transition: 1s;
-  z-index: 2;
-}
-
-.hidden-menu li
-{
-  margin-left: -40px;
-  margin-top: 5px;
-}
-
-.hidden-menu-ticker {
-  display: none;
-}
-
-.btn-menu {
-  display: none;
-  color: #34344c;
-  background-color: #5c5c8a;
-  padding: 5px;
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  cursor: pointer;
-  transition: 1s;
-  z-index: 3;
-  width: 35px;
-  opacity: 0.85;
-
-}
-.btn-menu span {
+.container {
   display: block;
-  height: 5px;
-  background-color: #34344c;
-  margin: 5px 0 0;
-  transition: all .1s linear .23s;
-  position: relative;
-}
-.btn-menu span.first {
-  margin-top: 0;
-}
-.hidden-menu-ticker:checked ~ .btn-menu {
-  top: 175px;
-}
-.hidden-menu-ticker:checked ~ .hidden-menu {
-  top: 0;
-}
-.hidden-menu-ticker:checked ~ .btn-menu span.first {
-  -webkit-transform: rotate(45deg);
-  top: 10px;
-}
-.hidden-menu-ticker:checked ~ .btn-menu span.second {
-  opacity: 0;
-}
-.hidden-menu-ticker:checked ~ .btn-menu span.third {
-  -webkit-transform: rotate(-45deg);
-  top: -10px;
-}
-
-li {
-  list-style-type: none;
-  color: white;
-  text-decoration: none;
-}
-
-nav a, li {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  font-size: 1.1em;
-  font-family: Arial, Verdana, sans-serif;
-}
-
-nav div {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  display: inline-block;
-  font-size: 1.1em;
-  font-family: Arial, Verdana, sans-serif;
-}
-
-nav div:hover{
-  background-color: #5c5c8a;
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  /*border-radius: 8px;*/
-}
-
-nav a:hover,
-nav a:focus,
-nav a:active {
-  background-color: #5c5c8a;
-  text-decoration: none;
-  color: white;
-  z-index: 100;
-  /*border-radius: 8px;*/
-}
-
-
-.main {
   background: #f0f8ff;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
-  box-shadow: 0 0 40px 0 rgba(255,255,255,1);
-  padding: 30px;
-}
-
-.contanier {
   max-width: 1000px;
   width: 80%;
   margin: 0 auto;
-
+  padding: 31px;
 }
 
 .left_side {
@@ -177,16 +24,18 @@ nav a:active {
   box-shadow: 0 4px 20px 0 rgba(00,00,00,1);
   background: #c2c2c2;
   border-radius: 5px;
+  padding:0;
 }
 
 .left_side li {
-  padding-left: 5px;
+  padding: 8px;
   color: black;
 }
 
 .left_side a {
   display: block;
   padding: 3px;
+  text-decoration: none;
 }
 
 .left_side a:hover {
@@ -214,82 +63,18 @@ article {
 }
 
 
-footer {
-  height: 36px;
-  background: #34344c;
-  margin-top: 30px;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center
-
-}
-
-footer a {
-  display: inline-block;
-  width: 30px;
-  height:30px;
-  margin-left: 20px;
-  margin-top: 3px;
-  border-radius: 50%;
-  background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;
-}
-
-.tw {
-  background-image: url(../img/tw.png);
-  /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;
-  background-color:#34344c;
-}
-
-.inst {
-  background-image: url(../img/inst.png);
-  /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;
-  background-color:#34344c;
-}
-
-.fb {
-  background-image: url(../img/fb.png);
-  /*background-position: center center; /* Положение фона */
-  background-repeat: no-repeat;
-  background-color:#34344c;
-}
-
-.vk {
-    background-image: url(../img/vk.png);
-    background-repeat: no-repeat;
-    background-color:#34344c;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 @media only screen and (max-width: 40.063em) {
 
-  header{
-    display: none;
-  }
+
 
   h2 {
     display: none;
   }
 
-  .hidden-menu
-  {
-    display: flex;
-  }
 
-  .btn-menu
-  {
-    display: inherit;
-  }
+
+
 
   .feedback .btn {
     border-radius: 0;
@@ -311,7 +96,6 @@ footer a {
   .contanier {
     margin: 0;
     padding: 10px;
-    /*padding-right: 0;*/
     width: 100%;
     border-radius: 0;
   }

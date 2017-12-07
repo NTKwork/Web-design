@@ -5,30 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Appointments</title>
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/style_appointments.css" rel="stylesheet">
   </head>
   <body>
-    <div class=wrapper>
-      <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-      <label class="btn-menu" for="hmt">
-        <span class="first"></span>
-        <span class="second"></span>
-        <span class="third"></span>
-      </label>
-      <ul class="hidden-menu">
-        <a href="index.html"><li>Main</li></a>
-        <div><li>Appointments</li></div>
-        <a href="contacts.php"><li>Contact</li></a>
-        <a href="about.html"> <li>About us</li></a>
-        <a href="intresting.html"><li>Interesting</li></a>
-      </ul>
+    <div class="wrapper">
       <header>
+        <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+        <label class="btn-menu" for="hmt">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+        </label>
         <nav>
           <ul>
             <a href="index.html"><li>Main</li></a>
             <div><li>Appointments</li></div>
             <a href="contacts.php"><li>Contact</li></a>
-            <a href="about.html"> <li>About us</li></a>
+            <a href="about.html"><li>About us</li></a>
             <a href="intresting.html"><li>Interesting</li></a>
           </ul>
         </nav>
@@ -39,7 +33,6 @@
           <section class="choose_lesson_type container">
             <article class="individual_counseling">
               <img src="img/indiv.jpg" alt="Individual counseling" width="200" height="200">
-              <!-- <h2>Individual counseling</h2> -->
               <div class="bottom_part">
                 <h2>Individual counseling</h2>
                 <div class="line"></div>
@@ -95,7 +88,7 @@
         </div>
       </main>
       <footer>
-        <section class="social contanier">
+        <section class="soc">
           <a href="https://twitter.com/hightower_01" class="tw"></a>
           <a href="https://www.instagram.com/irinachibis/" class="inst"></a>
           <a href="https://www.facebook.com/ekaterina.valkovskaya.7" class="fb"></a>

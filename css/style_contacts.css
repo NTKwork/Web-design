@@ -1,0 +1,130 @@
+h1 {
+  display: none;
+}
+
+
+.container {
+  justify-content: space-between;
+  height: 35rem;
+}
+
+
+iframe {
+  width: 50%;
+  height: 35rem;
+  border-radius: 20px 0 0 20px;
+  -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
+  box-shadow: 0 0 40px 0 rgba(255,255,255,1);
+  background-color: white;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.address_and_feedback {
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+  background-color: #ededed;
+  box-sizing: border-box;
+border-radius: 0 20px 20px 0;
+}
+
+.contact_information p {
+  margin-top: 0;
+}
+
+.feedback input {
+  border-radius: 5px;
+  padding-left: 4px;
+  width: 50%;
+  max-width: 12rem;
+}
+
+.feedback label {
+  padding-left: 4px;
+}
+
+form div {
+  padding: 0 10px 15px 0;
+}
+
+textarea {
+  width: 92%;
+  max-width: 22rem;
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    width: 125px;
+    height: 30px;
+    background: #6c7e7d;
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 10px;
+    box-shadow: none;
+    padding-top: 5px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/*Medium and small screen*/
+@media only screen and (max-width: 40.063em) {
+
+
+.hidden-menu
+{
+  display: flex;
+}
+
+.btn-menu
+{
+  display: block;
+}
+
+.feedback .btn {
+  border-radius: 0;
+}
+
+h1 {
+  display: block;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  margin:0;
+  max-width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.address_and_feedback {
+  padding-top: 50px;
+  width: 100vw;
+  font-size: 12px;
+  border-radius:0;
+  background: #34344c;
+  color:silver;
+}
+
+iframe {
+  width: 100vw;
+  height: 80vh;
+  border-radius:0;
+  -webkit-box-shadow: 0 0 40px 0 rgba(255,255,255,1);
+  box-shadow: 0 0 40px 0 rgba(255,255,255,1);
+}
+
+footer {
+  margin-top: 12px;
+}
+
+}
